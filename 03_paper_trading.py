@@ -37,6 +37,7 @@ PREFIJOS_DEPORTES = [
 MAX_DEPORTES_POR_RUN = 15
 REGIONES = "eu,uk"
 
+
 DIR = os.path.dirname(os.path.abspath(__file__))
 ARCH_PENDING  = os.path.join(DIR, "pending_bets.csv")
 ARCH_SETTLED  = os.path.join(DIR, "settled_bets.csv")
@@ -342,6 +343,51 @@ def informe(estado):
     print(f"  Apuestas abiertas : {len(p)}")
     print(f"+{'-'*58}+")
 
+DIR = os.path.dirname(os.path.abspath(__file__))
+
+
 def main():
     e = cargar_estado()
-    print(">>> [1/3] Escaneando cuotas en paralelo ..
+
+    print(">>> [1/3] Escaneando cuotas en paralelo ...")
+    partidos = escanear_todo()
+    print(f"    {len(partidos)} partidos recibidos")
+    H = detectar_value_bets(partidos, e["bankroll"])
+    nuevos = registrar_pendientes(H)
+    print(f"    {len(H)} value bets detectadas | {nuevos} nuevas registradas")
+
+    print("\n>>> [2/3] Liquidando partidos terminados ...")
+    liq, gan, pnl_t = liquidar_pendientes(e)
+    if liq:
+        print(f"    {liq} liquidadas | {gan} ganadas | P&L sesion: {pnl_t:+.2f} EUR")
+    else:
+        print("    Sin partidos para liquidar.")
+
+    print("\n>>> [3/3] Informe global")
+    informe(e)
+
+    # Generar dashboard HTML en directo
+    try:
+        import importlib.util, sys
+        spec = importlib.util.spec_from_file_location("dash", os.path.join(DIR, "05_generar_dashboard.py"))
+        mod = importlib.util.module_from_spec(spec)
+        sys.modules["dash"] = mod
+        spec.loader.exec_module(mod)
+        mod.generar()
+    except Exception as ex:
+        print(f"   [!] No se pudo generar el dashboard: {ex}")
+
+    # Generar Excel con graficas
+    try:
+        import importlib.util, sys
+        spec = importlib.util.spec_from_file_location("xls", os.path.join(DIR, "06_generar_excel.py"))
+        mod = importlib.util.module_from_spec(spec)
+        sys.modules["xls"] = mod
+        spec.loader.exec_module(mod)
+        mod.generar()
+    except Exception as ex:
+        print(f"   [!] No se pudo generar el Excel: {ex}")
+
+
+if __name__ == "__main__":
+    main()
