@@ -34,8 +34,8 @@ PREFIJOS_DEPORTES = [
     "americanfootball_","mma_","rugbyleague_","rugbyunion_",
     "cricket_","aussierules_","boxing_",
 ]
-MAX_DEPORTES_POR_RUN = 15
-REGIONES = "eu,uk"
+MAX_DEPORTES_POR_RUN = 8
+REGIONES = "eu,uk,us"
 
 
 DIR = os.path.dirname(os.path.abspath(__file__))
@@ -64,12 +64,37 @@ def _cargar_agotadas_disco():
 
 _api_agotadas.update(_cargar_agotadas_disco())
 
+_api_uso = {}  # {key_corta: {"used": int, "remaining": int, "last": iso}}
+
+def _cargar_uso_disco():
+    if not os.path.exists(ARCH_API_USE):
+        return {}
+    try:
+        with open(ARCH_API_USE) as f:
+            data = json.loads(f.read() or "{}")
+            return data.get("uso", {})
+    except Exception:
+        return {}
+
+_api_uso.update(_cargar_uso_disco())
+
 def _guardar_agotadas_disco():
     try:
         with open(ARCH_API_USE, "w") as f:
-            json.dump({"agotadas": sorted(_api_agotadas)}, f)
+            json.dump({"agotadas": sorted(_api_agotadas), "uso": _api_uso}, f, indent=2)
     except Exception:
         pass
+
+def _registrar_uso(key, used, remaining):
+    if used is None and remaining is None:
+        return
+    short = key[:6] + "..." + key[-4:]
+    with _api_lock:
+        _api_uso[short] = {
+            "used": int(used) if used is not None else _api_uso.get(short, {}).get("used"),
+            "remaining": int(remaining) if remaining is not None else _api_uso.get(short, {}).get("remaining"),
+            "last": dt.datetime.utcnow().isoformat(timespec="seconds") + "Z",
+        }
 
 def api_key_activa():
     with _api_lock:
@@ -150,6 +175,12 @@ def _get(url, _retries=2):
     except Exception as e:
         return None, str(e)
 
+    # Captura headers de cupo (The Odds API los devuelve en cada respuesta)
+    used = r.headers.get("x-requests-used")
+    remaining = r.headers.get("x-requests-remaining")
+    _registrar_uso(key, used, remaining)
+    _guardar_agotadas_disco()
+
     cuerpo = (r.text or "").lower()
     if r.status_code in (401, 403) or "quota" in cuerpo or "out of" in cuerpo:
         marcar_agotada(key)
@@ -174,6 +205,9 @@ def descubrir_deportes_activos():
         key = d.get("key","")
         if any(key.startswith(p) for p in PREFIJOS_DEPORTES):
             eleg.append({"key":key, "grupo":d.get("group",""), "title":d.get("title",key)})
+    # rotación entre runs: cada ventana horaria empieza por un grupo distinto
+    offset = (dt.datetime.utcnow().hour // 2) % max(len(eleg), 1)
+    eleg = eleg[offset:] + eleg[:offset]
     # round-robin por grupo
     por_g = {}
     for d in eleg: por_g.setdefault(d["grupo"], []).append(d)
