@@ -1,1 +1,1 @@
-id,sport,event,market,outcome,bet_odds,closing_odds,stake,result,profit,bankroll_after,placed_at,settled_at,edge_pct
+id,match_id,fecha,deporte,partido,home_team,away_team,seleccion,casa,cuota,prob_real,edge_pct,stake_eur,creada,resultado,score,pnl,bankroll_tras
