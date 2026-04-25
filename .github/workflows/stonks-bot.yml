@@ -3,7 +3,7 @@ name: STONKS Bot - Paper Trading 24/7
 on:
   # Cada 4 horas, todos los días (en hora UTC)
   schedule:
-    - cron: "0 */4 * * *"
+    - cron: "0 */2 * * *"
   # Permite lanzarlo a mano desde la pestaña Actions
   workflow_dispatch:
 
