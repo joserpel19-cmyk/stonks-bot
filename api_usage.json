@@ -1,10 +1,17 @@
 {
-  "agotadas": [],
+  "agotadas": [
+    "2e51f39d5aa62b2ac755a5f28b8f518c"
+  ],
   "uso": {
     "2e51f3...518c": {
-      "used": 448,
-      "remaining": 52,
-      "last": "2026-04-25T20:45:22Z"
+      "used": 500,
+      "remaining": 0,
+      "last": "2026-04-25T22:41:58Z"
+    },
+    "af9577...57ff": {
+      "used": 8,
+      "remaining": 492,
+      "last": "2026-04-25T22:41:58Z"
     }
   }
 }
