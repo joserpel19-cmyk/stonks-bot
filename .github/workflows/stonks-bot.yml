@@ -1,0 +1,55 @@
+name: STONKS Bot - Paper Trading 24/7
+
+on:
+  # Cada 4 horas, todos los días (en hora UTC)
+  schedule:
+    - cron: "0 */4 * * *"
+  # Permite lanzarlo a mano desde la pestaña Actions
+  workflow_dispatch:
+
+# Permisos para que el workflow pueda hacer commit de los CSVs y dashboard
+permissions:
+  contents: write
+
+jobs:
+  run-bot:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Descargar el repositorio
+        uses: actions/checkout@v4
+
+      - name: Configurar Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+
+      - name: Instalar dependencias
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Ejecutar el bot (paper trading)
+        env:
+          THE_ODDS_API_KEYS: ${{ secrets.THE_ODDS_API_KEYS }}
+        run: python 03_paper_trading.py
+
+      - name: Generar página index.html para GitHub Pages
+        run: |
+          if [ -f dashboard.html ]; then
+            cp dashboard.html index.html
+          fi
+
+      - name: Hacer commit de los datos actualizados
+        run: |
+          git config user.name "stonks-bot"
+          git config user.email "stonks-bot@users.noreply.github.com"
+          git add -A
+          if git diff --staged --quiet; then
+            echo "Sin cambios que commitear."
+          else
+            git commit -m "🤖 Auto-update: $(date -u +'%Y-%m-%d %H:%M UTC')"
+            git push
+          fi
