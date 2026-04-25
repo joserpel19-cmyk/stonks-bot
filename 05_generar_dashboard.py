@@ -132,9 +132,44 @@ def generar():
     dep_labels = list(por_deporte.keys())
     dep_counts = [por_deporte[d]["n"] for d in dep_labels]
 
-    n_keys_total = 2
-    n_keys_agot  = len(api_use.get("agotadas", []))
+    # Cupo de las APIs (leido de api_usage.json["uso"])
+    uso_dict = api_use.get("uso", {}) if isinstance(api_use, dict) else {}
+    agotadas = api_use.get("agotadas", [])
+    n_keys_total = max(len(uso_dict), 1)
+    n_keys_agot  = len(agotadas)
     keys_ok = n_keys_total - n_keys_agot
+    cupo_used      = sum(int(v.get("used", 0) or 0) for v in uso_dict.values())
+    cupo_remaining = sum(int(v.get("remaining", 0) or 0) for v in uso_dict.values())
+    cupo_total_est = cupo_used + cupo_remaining
+    cupo_pct = (cupo_used / cupo_total_est * 100) if cupo_total_est > 0 else 0.0
+    if cupo_pct >= 80:   cupo_color = "#d9544d"
+    elif cupo_pct >= 60: cupo_color = "#caa64b"
+    else:                cupo_color = "#1ea672"
+
+    # Filas tabla detalle por clave
+    filas_keys = ""
+    for kshort, v in sorted(uso_dict.items()):
+        u = int(v.get("used", 0) or 0)
+        rem = int(v.get("remaining", 0) or 0)
+        tot = u + rem
+        pct = (u / tot * 100) if tot > 0 else 0
+        cb = "#d9544d" if pct >= 80 else ("#caa64b" if pct >= 60 else "#1ea672")
+        last = v.get("last", "")[:16].replace("T", " ")
+        estado_k = "AGOTADA" if kshort in agotadas else "OK"
+        col_st   = "#d9544d" if estado_k == "AGOTADA" else "#1ea672"
+        filas_keys += (
+            f"<tr>"
+            f"<td><code style='color:#9ab'>{kshort}</code></td>"
+            f"<td style='text-align:right'>{u}</td>"
+            f"<td style='text-align:right'>{rem}</td>"
+            f"<td style='text-align:right'>{tot or '?'}</td>"
+            f"<td style='text-align:right;color:{cb};font-weight:600'>{pct:.0f}%</td>"
+            f"<td style='color:{col_st};font-weight:600'>{estado_k}</td>"
+            f"<td style='color:#888'>{last}</td>"
+            f"</tr>"
+        )
+    if not filas_keys:
+        filas_keys = "<tr><td colspan=7 style='text-align:center;color:#888;padding:20px'>Sin datos de cupo aun (espera al primer run del bot)</td></tr>"
 
     html = f"""<!DOCTYPE html>
 <html lang="es">
@@ -234,11 +269,22 @@ tr:hover td {{ background: #1c2530; }}
 
 <div class="section">
   <h2>Estado del sistema</h2>
-  <div style="display:flex; gap:30px; flex-wrap:wrap;">
+  <div style="display:flex; gap:30px; flex-wrap:wrap; margin-bottom:14px;">
     <div><b>APIs disponibles:</b> {keys_ok}/{n_keys_total}</div>
-    <div><b>Volumen total apostado:</b> {staked:.2f} &euro;</div>
+    <div><b>Cupo usado:</b> <span style="color:{cupo_color};font-weight:600">{cupo_used}/{cupo_total_est or '?'}</span> ({cupo_pct:.0f}%)</div>
+    <div><b>Cupo restante:</b> <span style="color:{cupo_color};font-weight:600">{cupo_remaining}</span></div>
+    <div><b>Volumen apostado:</b> {staked:.2f} &euro;</div>
     <div><b>Modo:</b> Paper trading (sin dinero real)</div>
   </div>
+  <div style="background:#0f1419;border-radius:6px;height:8px;overflow:hidden;margin-bottom:14px;">
+    <div style="background:{cupo_color};width:{cupo_pct:.1f}%;height:100%;transition:width .3s"></div>
+  </div>
+  <table>
+    <thead>
+      <tr><th>Clave (resumen)</th><th>Usado</th><th>Restante</th><th>Total mes</th><th>%</th><th>Estado</th><th>Ultimo uso</th></tr>
+    </thead>
+    <tbody>{filas_keys}</tbody>
+  </table>
 </div>
 
 <div class="section">
