@@ -3,18 +3,19 @@ import requests, csv, json, os, statistics, concurrent.futures
 import datetime as dt
 
 # ---- CONFIG ----
-# Las claves API se leen de la variable de entorno THE_ODDS_API_KEYS
-# (separadas por coma) si está disponible. En GitHub Actions se inyectan
-# desde GitHub Secrets. Si no existe, usa las locales (solo en tu PC).
+# Las claves API se leen SIEMPRE de la variable de entorno THE_ODDS_API_KEYS
+# (separadas por coma). En GitHub Actions se inyectan desde GitHub Secrets.
+# Para correr en local, define la variable de entorno antes de ejecutar:
+#   PowerShell:  $env:THE_ODDS_API_KEYS="clave1,clave2"; python 03_paper_trading.py
+#   CMD:         set THE_ODDS_API_KEYS=clave1,clave2 && python 03_paper_trading.py
 _env_keys = os.environ.get("THE_ODDS_API_KEYS", "").strip()
-if _env_keys:
-    API_KEYS = [k.strip() for k in _env_keys.split(",") if k.strip()]
-else:
-    API_KEYS = [
-        "c01be8a3f80b3538d472b864047cd358",  # key #1 (The Odds API)
-        "0de9ea1fb76046196d6163111f6592e7",  # key #2 (The Odds API - backup)
-        # Añade más claves aquí si registras más cuentas free.
-    ]
+if not _env_keys:
+    raise SystemExit(
+        "ERROR: falta la variable de entorno THE_ODDS_API_KEYS.\n"
+        "En GitHub Actions debe estar configurada como Secret del repo.\n"
+        "En local, define la variable antes de ejecutar."
+    )
+API_KEYS = [k.strip() for k in _env_keys.split(",") if k.strip()]
 
 BANKROLL_INICIAL = 20.00
 KELLY_DIV        = 20
@@ -343,8 +344,4 @@ def informe(estado):
 
 def main():
     e = cargar_estado()
-    print(">>> [1/3] Escaneando cuotas en paralelo ...")
-    partidos = escanear_todo()
-    print(f"    {len(partidos)} partidos recibidos")
-    H = detectar_value_bets(partidos, e["bankroll"])
-    nuevos = registrar_
+    print(">>> [1/3] Escaneando cuotas en paralelo ..
