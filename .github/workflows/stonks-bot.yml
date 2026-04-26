@@ -1,7 +1,7 @@
 name: STONKS Bot - Paper Trading 24/7
 
 on:
-  # Cada 4 horas, todos los días (en hora UTC)
+  # Cada 2 horas, todos los días (en hora UTC)
   schedule:
     - cron: "0 */2 * * *"
   # Permite lanzarlo a mano desde la pestaña Actions
@@ -11,10 +11,15 @@ on:
 permissions:
   contents: write
 
+# Sólo un workflow corriendo a la vez (evita commits que se pisan)
+concurrency:
+  group: stonks-bot
+  cancel-in-progress: false
+
 jobs:
   run-bot:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 15
 
     steps:
       - name: Descargar el repositorio
@@ -31,7 +36,38 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Ejecutar el bot (paper trading)
+      # ---- ELO UPDATER ----
+      # Sólo corre 1 vez al día (a las 06:00 UTC aprox) para no agotar la
+      # cuota gratis de football-data.org (100 req/día). Si no hay token,
+      # el script imprime un aviso y no falla.
+      - name: Actualizar modelo Elo (1x/día)
+        if: ${{ github.event.schedule == '0 6 * * *' || github.event_name == 'workflow_dispatch' }}
+        env:
+          FOOTBALL_DATA_KEY: ${{ secrets.FOOTBALL_DATA_KEY }}
+        run: |
+          # Si el cron no es el horario de 06 UTC, igual lo intentamos en
+          # cada workflow_dispatch manual; en el resto de horas, salta este
+          # paso y pasa al motor.
+          python 07_actualizar_elo.py || echo "Elo update falló pero seguimos."
+
+      # En cualquier ejecución (incluso sin token de football-data),
+      # llamamos también al updater una vez al día como fallback adicional
+      # — está protegido por idempotencia y rate limit.
+      - name: Actualizar Elo (fallback diario)
+        if: ${{ github.event.schedule != '0 6 * * *' && github.event_name != 'workflow_dispatch' }}
+        env:
+          FOOTBALL_DATA_KEY: ${{ secrets.FOOTBALL_DATA_KEY }}
+        run: |
+          # Sólo intenta una vez cada ~12h
+          HOUR=$(date -u +%H)
+          if [ "$HOUR" = "06" ] || [ "$HOUR" = "18" ]; then
+            python 07_actualizar_elo.py || true
+          else
+            echo "Saltando Elo update (no es ventana horaria)."
+          fi
+
+      # ---- MOTOR DE VALUE BETTING ----
+      - name: Ejecutar el bot v2 (paper trading)
         env:
           THE_ODDS_API_KEYS: ${{ secrets.THE_ODDS_API_KEYS }}
         run: python 03_paper_trading.py
@@ -44,12 +80,12 @@ jobs:
 
       - name: Hacer commit de los datos actualizados
         run: |
-         git config user.name "github-actions[bot]"
-         git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add -A
           if git diff --staged --quiet; then
             echo "Sin cambios que commitear."
           else
-            git commit -m "🤖 Auto-update: $(date -u +'%Y-%m-%d %H:%M UTC')"
+            git commit -m "Auto-update v2: $(date -u +'%Y-%m-%d %H:%M UTC')"
             git push
           fi
