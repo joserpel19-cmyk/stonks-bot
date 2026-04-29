@@ -176,9 +176,9 @@
     "soccer_efl_champ::luton town fc": 1447.34,
     "soccer_efl_champ::burnley fc": 1701.73,
     "soccer_efl_champ::birmingham city fc": 1496.56,
-    "soccer_efl_champ::ipswich town fc": 1603.58,
+    "soccer_efl_champ::ipswich town fc": 1605.6,
     "soccer_efl_champ::charlton athletic fc": 1455.74,
-    "soccer_efl_champ::southampton fc": 1609.6,
+    "soccer_efl_champ::southampton fc": 1607.58,
     "soccer_efl_champ::wrexham afc": 1524.61,
     "soccer_efl_champ::leicester city fc": 1420.23,
     "soccer_uefa_champs_league::bsc young boys": 1397.16,
@@ -187,7 +187,7 @@
     "soccer_uefa_champs_league::psv": 1499.86,
     "soccer_uefa_champs_league::sporting clube de portugal": 1530.58,
     "soccer_uefa_champs_league::lille osc": 1529.15,
-    "soccer_uefa_champs_league::fc bayern münchen": 1666.87,
+    "soccer_uefa_champs_league::fc bayern münchen": 1659.07,
     "soccer_uefa_champs_league::gnk dinamo zagreb": 1492.36,
     "soccer_uefa_champs_league::real madrid cf": 1587.17,
     "soccer_uefa_champs_league::vfb stuttgart": 1473.37,
@@ -199,7 +199,7 @@
     "soccer_uefa_champs_league::fc red bull salzburg": 1407.17,
     "soccer_uefa_champs_league::manchester city fc": 1504.59,
     "soccer_uefa_champs_league::fc internazionale milano": 1571.92,
-    "soccer_uefa_champs_league::paris saint-germain fc": 1679.4,
+    "soccer_uefa_champs_league::paris saint-germain fc": 1687.2,
     "soccer_uefa_champs_league::girona fc": 1442.9,
     "soccer_uefa_champs_league::club brugge kv": 1481.61,
     "soccer_uefa_champs_league::borussia dortmund": 1539.53,
@@ -236,7 +236,7 @@
     "soccer_uefa_champs_league::galatasaray sk": 1499.58,
     "soccer_uefa_champs_league::fk kairat": 1417.68
   },
-  "ultima_actualizacion": "2026-04-28T06:33:52Z",
+  "ultima_actualizacion": "2026-04-29T06:29:04Z",
   "partidos_procesados": [
     "fd_497410",
     "fd_497411",
@@ -6189,6 +6189,8 @@
     "fd_544523",
     "fd_537147",
     "fd_537152",
-    "fd_545970"
+    "fd_545970",
+    "fd_541189",
+    "fd_552092"
   ]
 }
