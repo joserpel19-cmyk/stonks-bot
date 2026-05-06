@@ -214,8 +214,8 @@
     "soccer_uefa_champs_league::stade brestois 29": 1462.19,
     "soccer_uefa_champs_league::sk sturm graz": 1455.01,
     "soccer_uefa_champs_league::atalanta bc": 1508.06,
-    "soccer_uefa_champs_league::arsenal fc": 1685.15,
-    "soccer_uefa_champs_league::club atlético de madrid": 1570.45,
+    "soccer_uefa_champs_league::arsenal fc": 1690.39,
+    "soccer_uefa_champs_league::club atlético de madrid": 1565.21,
     "soccer_uefa_champs_league::rb leipzig": 1444.98,
     "soccer_uefa_champs_league::athletic club": 1486.04,
     "soccer_uefa_champs_league::royale union saint-gilloise": 1473.02,
@@ -236,7 +236,7 @@
     "soccer_uefa_champs_league::galatasaray sk": 1499.58,
     "soccer_uefa_champs_league::fk kairat": 1417.68
   },
-  "ultima_actualizacion": "2026-05-05T06:21:48Z",
+  "ultima_actualizacion": "2026-05-06T06:33:45Z",
   "partidos_procesados": [
     "fd_497410",
     "fd_497411",
@@ -6271,6 +6271,7 @@
     "fd_544550",
     "fd_537164",
     "fd_537155",
-    "fd_545984"
+    "fd_545984",
+    "fd_552095"
   ]
 }
