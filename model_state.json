@@ -234,9 +234,10 @@
     "soccer_uefa_champs_league::ssc napoli": 1470.48,
     "soccer_uefa_champs_league::eintracht frankfurt": 1437.32,
     "soccer_uefa_champs_league::galatasaray sk": 1499.58,
-    "soccer_uefa_champs_league::fk kairat": 1417.68
+    "soccer_uefa_champs_league::fk kairat": 1417.68,
+    "soccer_uefa_champs_league::": 1501.85
   },
-  "ultima_actualizacion": "2026-05-06T06:33:45Z",
+  "ultima_actualizacion": "2026-05-07T06:41:53Z",
   "partidos_procesados": [
     "fd_497410",
     "fd_497411",
@@ -6272,6 +6273,7 @@
     "fd_537164",
     "fd_537155",
     "fd_545984",
-    "fd_552095"
+    "fd_552095",
+    "fd_552094"
   ]
 }
