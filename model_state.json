@@ -25,13 +25,13 @@
     "soccer_epl::leeds united fc": 1525.76,
     "soccer_spain_la_liga::athletic club": 1504.71,
     "soccer_spain_la_liga::getafe cf": 1481.91,
-    "soccer_spain_la_liga::real betis balompié": 1569.8,
+    "soccer_spain_la_liga::real betis balompié": 1575.3,
     "soccer_spain_la_liga::girona fc": 1448.38,
-    "soccer_spain_la_liga::rc celta de vigo": 1536.33,
+    "soccer_spain_la_liga::rc celta de vigo": 1522.55,
     "soccer_spain_la_liga::deportivo alavés": 1437.05,
     "soccer_spain_la_liga::ud las palmas": 1391.2,
     "soccer_spain_la_liga::sevilla fc": 1427.1,
-    "soccer_spain_la_liga::ca osasuna": 1494.92,
+    "soccer_spain_la_liga::ca osasuna": 1486.39,
     "soccer_spain_la_liga::cd leganés": 1438.06,
     "soccer_spain_la_liga::valencia cf": 1490.01,
     "soccer_spain_la_liga::fc barcelona": 1811.51,
@@ -42,10 +42,10 @@
     "soccer_spain_la_liga::real valladolid cf": 1276.57,
     "soccer_spain_la_liga::rcd espanyol de barcelona": 1422.74,
     "soccer_spain_la_liga::villarreal cf": 1635.55,
-    "soccer_spain_la_liga::club atlético de madrid": 1611.38,
+    "soccer_spain_la_liga::club atlético de madrid": 1619.91,
     "soccer_spain_la_liga::real oviedo": 1420.32,
-    "soccer_spain_la_liga::levante ud": 1463.02,
-    "soccer_spain_la_liga::elche cf": 1466.32,
+    "soccer_spain_la_liga::levante ud": 1476.8,
+    "soccer_spain_la_liga::elche cf": 1460.82,
     "soccer_italy_serie_a::genoa cfc": 1473.81,
     "soccer_italy_serie_a::fc internazionale milano": 1764.97,
     "soccer_italy_serie_a::parma calcio 1913": 1444.44,
@@ -237,7 +237,7 @@
     "soccer_uefa_champs_league::fk kairat": 1417.68,
     "soccer_uefa_champs_league::": 1501.85
   },
-  "ultima_actualizacion": "2026-05-12T18:04:07Z",
+  "ultima_actualizacion": "2026-05-13T06:52:05Z",
   "partidos_procesados": [
     "fd_497410",
     "fd_497411",
@@ -6342,6 +6342,9 @@
     "fd_545994",
     "fd_545995",
     "fd_545996",
-    "fd_557839"
+    "fd_557839",
+    "fd_544563",
+    "fd_544562",
+    "fd_544567"
   ]
 }
