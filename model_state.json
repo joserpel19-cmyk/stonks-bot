@@ -4,7 +4,7 @@
     "soccer_epl::fulham fc": 1497.94,
     "soccer_epl::ipswich town fc": 1321.13,
     "soccer_epl::liverpool fc": 1598.58,
-    "soccer_epl::arsenal fc": 1713.79,
+    "soccer_epl::arsenal fc": 1715.43,
     "soccer_epl::wolverhampton wanderers fc": 1357.93,
     "soccer_epl::everton fc": 1508.14,
     "soccer_epl::brighton & hove albion fc": 1563.77,
@@ -21,7 +21,7 @@
     "soccer_epl::leicester city fc": 1328.42,
     "soccer_epl::tottenham hotspur fc": 1429.62,
     "soccer_epl::sunderland afc": 1499.11,
-    "soccer_epl::burnley fc": 1359.68,
+    "soccer_epl::burnley fc": 1358.04,
     "soccer_epl::leeds united fc": 1535.26,
     "soccer_spain_la_liga::athletic club": 1488.08,
     "soccer_spain_la_liga::getafe cf": 1484.8,
@@ -237,7 +237,7 @@
     "soccer_uefa_champs_league::fk kairat": 1417.68,
     "soccer_uefa_champs_league::": 1501.85
   },
-  "ultima_actualizacion": "2026-05-18T18:04:42Z",
+  "ultima_actualizacion": "2026-05-19T18:09:50Z",
   "partidos_procesados": [
     "fd_497410",
     "fd_497411",
@@ -6418,6 +6418,7 @@
     "fd_537743",
     "fd_537744",
     "fd_537745",
-    "fd_537746"
+    "fd_537746",
+    "fd_538147"
   ]
 }
