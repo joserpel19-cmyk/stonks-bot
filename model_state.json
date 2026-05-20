@@ -11,15 +11,15 @@
     "soccer_epl::newcastle united fc": 1535.46,
     "soccer_epl::southampton fc": 1277.93,
     "soccer_epl::nottingham forest fc": 1532.3,
-    "soccer_epl::afc bournemouth": 1581.14,
+    "soccer_epl::afc bournemouth": 1583.02,
     "soccer_epl::west ham united fc": 1439.47,
     "soccer_epl::aston villa fc": 1559.31,
     "soccer_epl::brentford fc": 1533.35,
     "soccer_epl::crystal palace fc": 1491.17,
-    "soccer_epl::chelsea fc": 1529.08,
-    "soccer_epl::manchester city fc": 1712.37,
+    "soccer_epl::chelsea fc": 1534.67,
+    "soccer_epl::manchester city fc": 1710.49,
     "soccer_epl::leicester city fc": 1328.42,
-    "soccer_epl::tottenham hotspur fc": 1429.62,
+    "soccer_epl::tottenham hotspur fc": 1424.03,
     "soccer_epl::sunderland afc": 1499.11,
     "soccer_epl::burnley fc": 1358.04,
     "soccer_epl::leeds united fc": 1535.26,
@@ -237,7 +237,7 @@
     "soccer_uefa_champs_league::fk kairat": 1417.68,
     "soccer_uefa_champs_league::": 1501.85
   },
-  "ultima_actualizacion": "2026-05-19T18:09:50Z",
+  "ultima_actualizacion": "2026-05-20T18:22:37Z",
   "partidos_procesados": [
     "fd_497410",
     "fd_497411",
@@ -6419,6 +6419,8 @@
     "fd_537744",
     "fd_537745",
     "fd_537746",
-    "fd_538147"
+    "fd_538147",
+    "fd_538145",
+    "fd_538149"
   ]
 }
