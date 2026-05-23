@@ -49,7 +49,7 @@
     "soccer_italy_serie_a::genoa cfc": 1465.57,
     "soccer_italy_serie_a::fc internazionale milano": 1756.04,
     "soccer_italy_serie_a::parma calcio 1913": 1450.58,
-    "soccer_italy_serie_a::acf fiorentina": 1522.25,
+    "soccer_italy_serie_a::acf fiorentina": 1522.68,
     "soccer_italy_serie_a::empoli fc": 1387.37,
     "soccer_italy_serie_a::ac monza": 1309.99,
     "soccer_italy_serie_a::ac milan": 1608.87,
@@ -63,7 +63,7 @@
     "soccer_italy_serie_a::ss lazio": 1538.2,
     "soccer_italy_serie_a::venezia fc": 1398.35,
     "soccer_italy_serie_a::us lecce": 1392.95,
-    "soccer_italy_serie_a::atalanta bc": 1602.13,
+    "soccer_italy_serie_a::atalanta bc": 1601.7,
     "soccer_italy_serie_a::juventus fc": 1633.99,
     "soccer_italy_serie_a::como 1907": 1621.78,
     "soccer_italy_serie_a::us sassuolo calcio": 1507.36,
@@ -237,7 +237,7 @@
     "soccer_uefa_champs_league::fk kairat": 1417.68,
     "soccer_uefa_champs_league::": 1501.85
   },
-  "ultima_actualizacion": "2026-05-20T18:22:37Z",
+  "ultima_actualizacion": "2026-05-23T06:37:31Z",
   "partidos_procesados": [
     "fd_497410",
     "fd_497411",
@@ -6421,6 +6421,7 @@
     "fd_537746",
     "fd_538147",
     "fd_538145",
-    "fd_538149"
+    "fd_538149",
+    "fd_537185"
   ]
 }
