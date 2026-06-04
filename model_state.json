@@ -199,7 +199,7 @@
     "soccer_uefa_champs_league::fc red bull salzburg": 1407.17,
     "soccer_uefa_champs_league::manchester city fc": 1504.59,
     "soccer_uefa_champs_league::fc internazionale milano": 1571.92,
-    "soccer_uefa_champs_league::paris saint-germain fc": 1687.2,
+    "soccer_uefa_champs_league::paris saint-germain fc": 1695.44,
     "soccer_uefa_champs_league::girona fc": 1442.9,
     "soccer_uefa_champs_league::club brugge kv": 1481.61,
     "soccer_uefa_champs_league::borussia dortmund": 1539.53,
@@ -214,7 +214,7 @@
     "soccer_uefa_champs_league::stade brestois 29": 1462.19,
     "soccer_uefa_champs_league::sk sturm graz": 1455.01,
     "soccer_uefa_champs_league::atalanta bc": 1508.06,
-    "soccer_uefa_champs_league::arsenal fc": 1690.39,
+    "soccer_uefa_champs_league::arsenal fc": 1682.15,
     "soccer_uefa_champs_league::club atlético de madrid": 1565.21,
     "soccer_uefa_champs_league::rb leipzig": 1444.98,
     "soccer_uefa_champs_league::athletic club": 1486.04,
@@ -237,7 +237,7 @@
     "soccer_uefa_champs_league::fk kairat": 1417.68,
     "soccer_uefa_champs_league::": 1501.85
   },
-  "ultima_actualizacion": "2026-05-30T06:50:42Z",
+  "ultima_actualizacion": "2026-06-04T18:23:14Z",
   "partidos_procesados": [
     "fd_497410",
     "fd_497411",
@@ -6452,6 +6452,7 @@
     "fd_537193",
     "fd_537194",
     "fd_537188",
-    "fd_557983"
+    "fd_557983",
+    "fd_552096"
   ]
 }
