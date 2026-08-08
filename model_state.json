@@ -128,7 +128,7 @@
     "soccer_netherlands_eredivisie::fortuna sittard": 1432.88,
     "soccer_netherlands_eredivisie::afc ajax": 1626.39,
     "soccer_netherlands_eredivisie::sc heerenveen": 1553.4,
-    "soccer_netherlands_eredivisie::sbv excelsior": 1478.05,
+    "soccer_netherlands_eredivisie::sbv excelsior": 1501.4,
     "soccer_netherlands_eredivisie::fc volendam": 1428.36,
     "soccer_netherlands_eredivisie::telstar 1963": 1499.43,
     "soccer_portugal_primeira_liga::sporting clube de portugal": 1781.26,
@@ -139,11 +139,11 @@
     "soccer_portugal_primeira_liga::boavista fc": 1361.8,
     "soccer_portugal_primeira_liga::fc porto": 1735.2,
     "soccer_portugal_primeira_liga::gil vicente fc": 1491.67,
-    "soccer_portugal_primeira_liga::gd estoril praia": 1480.04,
+    "soccer_portugal_primeira_liga::gd estoril praia": 1480.93,
     "soccer_portugal_primeira_liga::cd santa clara": 1478.4,
     "soccer_portugal_primeira_liga::sc farense": 1410.05,
     "soccer_portugal_primeira_liga::moreirense fc": 1450.67,
-    "soccer_portugal_primeira_liga::fc famalicão": 1576.21,
+    "soccer_portugal_primeira_liga::fc famalicão": 1575.32,
     "soccer_portugal_primeira_liga::sport lisboa e benfica": 1769.27,
     "soccer_portugal_primeira_liga::sporting clube de braga": 1628.14,
     "soccer_portugal_primeira_liga::cf estrela da amadora": 1387.86,
@@ -235,9 +235,10 @@
     "soccer_uefa_champs_league::eintracht frankfurt": 1437.32,
     "soccer_uefa_champs_league::galatasaray sk": 1499.58,
     "soccer_uefa_champs_league::fk kairat": 1417.68,
-    "soccer_uefa_champs_league::": 1501.85
+    "soccer_uefa_champs_league::": 1501.85,
+    "soccer_netherlands_eredivisie::sc cambuur-leeuwarden": 1476.65
   },
-  "ultima_actualizacion": "2026-08-06T06:35:20Z",
+  "ultima_actualizacion": "2026-08-08T07:00:06Z",
   "partidos_procesados": [
     "fd_497410",
     "fd_497411",
@@ -6453,6 +6454,8 @@
     "fd_537194",
     "fd_537188",
     "fd_557983",
-    "fd_552096"
+    "fd_552096",
+    "fd_558214",
+    "fd_567264"
   ]
 }
