@@ -120,7 +120,7 @@
     "soccer_netherlands_eredivisie::az": 1567.46,
     "soccer_netherlands_eredivisie::psv": 1759.74,
     "soccer_netherlands_eredivisie::rkc waalwijk": 1406.12,
-    "soccer_netherlands_eredivisie::sparta rotterdam": 1443.66,
+    "soccer_netherlands_eredivisie::sparta rotterdam": 1464.22,
     "soccer_netherlands_eredivisie::heracles almelo": 1316.03,
     "soccer_netherlands_eredivisie::fc utrecht": 1585.87,
     "soccer_netherlands_eredivisie::pec zwolle": 1430.93,
@@ -130,8 +130,8 @@
     "soccer_netherlands_eredivisie::sc heerenveen": 1563.2,
     "soccer_netherlands_eredivisie::sbv excelsior": 1501.4,
     "soccer_netherlands_eredivisie::fc volendam": 1428.36,
-    "soccer_netherlands_eredivisie::telstar 1963": 1513.8,
-    "soccer_portugal_primeira_liga::sporting clube de portugal": 1773.88,
+    "soccer_netherlands_eredivisie::telstar 1963": 1493.24,
+    "soccer_portugal_primeira_liga::sporting clube de portugal": 1775.9,
     "soccer_portugal_primeira_liga::rio ave fc": 1418.48,
     "soccer_portugal_primeira_liga::avs": 1363.68,
     "soccer_portugal_primeira_liga::cd nacional": 1432.43,
@@ -148,10 +148,10 @@
     "soccer_portugal_primeira_liga::sporting clube de braga": 1625.01,
     "soccer_portugal_primeira_liga::cf estrela da amadora": 1395.24,
     "soccer_portugal_primeira_liga::fc arouca": 1491.38,
-    "soccer_portugal_primeira_liga::vitória sc": 1459.21,
+    "soccer_portugal_primeira_liga::vitória sc": 1457.19,
     "soccer_portugal_primeira_liga::cd tondela": 1412.24,
     "soccer_portugal_primeira_liga::fc alverca": 1462.02,
-    "soccer_efl_champ::blackburn rovers fc": 1457.72,
+    "soccer_efl_champ::blackburn rovers fc": 1460.71,
     "soccer_efl_champ::derby county fc": 1515.46,
     "soccer_efl_champ::preston north end fc": 1437.75,
     "soccer_efl_champ::sheffield united fc": 1513.73,
@@ -239,9 +239,10 @@
     "soccer_netherlands_eredivisie::sc cambuur-leeuwarden": 1476.65,
     "soccer_netherlands_eredivisie::ado den haag": 1490.08,
     "soccer_portugal_primeira_liga::cs marítimo": 1505.65,
-    "soccer_portugal_primeira_liga::académico de viseu fc": 1507.45
+    "soccer_portugal_primeira_liga::académico de viseu fc": 1507.45,
+    "soccer_efl_champ::wolverhampton wanderers fc": 1497.01
   },
-  "ultima_actualizacion": "2026-08-14T18:59:39Z",
+  "ultima_actualizacion": "2026-08-15T06:43:17Z",
   "partidos_procesados": [
     "fd_497410",
     "fd_497411",
@@ -6475,6 +6476,9 @@
     "fd_567259",
     "fd_567261",
     "fd_567262",
-    "fd_567257"
+    "fd_567257",
+    "fd_558223",
+    "fd_567268",
+    "fd_561761"
   ]
 }
