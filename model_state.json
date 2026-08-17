@@ -40,11 +40,11 @@
     "soccer_spain_la_liga::rcd mallorca": 1464.1,
     "soccer_spain_la_liga::real madrid cf": 1716.84,
     "soccer_spain_la_liga::real valladolid cf": 1276.57,
-    "soccer_spain_la_liga::rcd espanyol de barcelona": 1450.59,
+    "soccer_spain_la_liga::rcd espanyol de barcelona": 1466.43,
     "soccer_spain_la_liga::villarreal cf": 1616.71,
     "soccer_spain_la_liga::club atlético de madrid": 1607.53,
     "soccer_spain_la_liga::real oviedo": 1393.88,
-    "soccer_spain_la_liga::levante ud": 1482.47,
+    "soccer_spain_la_liga::levante ud": 1466.63,
     "soccer_spain_la_liga::elche cf": 1471.01,
     "soccer_italy_serie_a::genoa cfc": 1455.35,
     "soccer_italy_serie_a::fc internazionale milano": 1751.57,
@@ -142,12 +142,12 @@
     "soccer_portugal_primeira_liga::gd estoril praia": 1466.64,
     "soccer_portugal_primeira_liga::cd santa clara": 1487.96,
     "soccer_portugal_primeira_liga::sc farense": 1410.05,
-    "soccer_portugal_primeira_liga::moreirense fc": 1453.8,
-    "soccer_portugal_primeira_liga::fc famalicão": 1575.32,
+    "soccer_portugal_primeira_liga::moreirense fc": 1440.43,
+    "soccer_portugal_primeira_liga::fc famalicão": 1561.63,
     "soccer_portugal_primeira_liga::sport lisboa e benfica": 1761.82,
     "soccer_portugal_primeira_liga::sporting clube de braga": 1625.01,
     "soccer_portugal_primeira_liga::cf estrela da amadora": 1398.86,
-    "soccer_portugal_primeira_liga::fc arouca": 1491.38,
+    "soccer_portugal_primeira_liga::fc arouca": 1504.75,
     "soccer_portugal_primeira_liga::vitória sc": 1457.19,
     "soccer_portugal_primeira_liga::cd tondela": 1412.24,
     "soccer_portugal_primeira_liga::fc alverca": 1458.4,
@@ -238,7 +238,7 @@
     "soccer_uefa_champs_league::": 1501.85,
     "soccer_netherlands_eredivisie::sc cambuur-leeuwarden": 1462.92,
     "soccer_netherlands_eredivisie::ado den haag": 1471.01,
-    "soccer_portugal_primeira_liga::cs marítimo": 1505.65,
+    "soccer_portugal_primeira_liga::cs marítimo": 1519.34,
     "soccer_portugal_primeira_liga::académico de viseu fc": 1494.72,
     "soccer_efl_champ::wolverhampton wanderers fc": 1497.01,
     "soccer_efl_champ::bolton wanderers fc": 1506.49,
@@ -246,7 +246,7 @@
     "soccer_spain_la_liga::real racing club de santander": 1501.52,
     "soccer_efl_champ::west ham united fc": 1506.46
   },
-  "ultima_actualizacion": "2026-08-16T18:33:59Z",
+  "ultima_actualizacion": "2026-08-17T18:44:26Z",
   "partidos_procesados": [
     "fd_497410",
     "fd_497411",
@@ -6508,6 +6508,9 @@
     "fd_558231",
     "fd_567270",
     "fd_561770",
-    "fd_561771"
+    "fd_561771",
+    "fd_564632",
+    "fd_567272",
+    "fd_567269"
   ]
 }
