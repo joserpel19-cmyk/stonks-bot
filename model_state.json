@@ -45,7 +45,7 @@
     "soccer_spain_la_liga::club atlético de madrid": 1607.53,
     "soccer_spain_la_liga::real oviedo": 1393.88,
     "soccer_spain_la_liga::levante ud": 1466.63,
-    "soccer_spain_la_liga::elche cf": 1471.01,
+    "soccer_spain_la_liga::elche cf": 1473.65,
     "soccer_italy_serie_a::genoa cfc": 1455.35,
     "soccer_italy_serie_a::fc internazionale milano": 1751.57,
     "soccer_italy_serie_a::parma calcio 1913": 1460.34,
@@ -135,7 +135,7 @@
     "soccer_portugal_primeira_liga::rio ave fc": 1412.88,
     "soccer_portugal_primeira_liga::avs": 1363.68,
     "soccer_portugal_primeira_liga::cd nacional": 1446.72,
-    "soccer_portugal_primeira_liga::casa pia ac": 1397.31,
+    "soccer_portugal_primeira_liga::casa pia ac": 1390.5,
     "soccer_portugal_primeira_liga::boavista fc": 1361.8,
     "soccer_portugal_primeira_liga::fc porto": 1744.62,
     "soccer_portugal_primeira_liga::gil vicente fc": 1498.05,
@@ -144,7 +144,7 @@
     "soccer_portugal_primeira_liga::sc farense": 1410.05,
     "soccer_portugal_primeira_liga::moreirense fc": 1440.43,
     "soccer_portugal_primeira_liga::fc famalicão": 1561.63,
-    "soccer_portugal_primeira_liga::sport lisboa e benfica": 1761.82,
+    "soccer_portugal_primeira_liga::sport lisboa e benfica": 1768.63,
     "soccer_portugal_primeira_liga::sporting clube de braga": 1625.01,
     "soccer_portugal_primeira_liga::cf estrela da amadora": 1398.86,
     "soccer_portugal_primeira_liga::fc arouca": 1504.75,
@@ -155,7 +155,7 @@
     "soccer_efl_champ::derby county fc": 1505.31,
     "soccer_efl_champ::preston north end fc": 1431.26,
     "soccer_efl_champ::sheffield united fc": 1511.44,
-    "soccer_efl_champ::cardiff city fc": 1412.82,
+    "soccer_efl_champ::cardiff city fc": 1414.14,
     "soccer_efl_champ::sunderland afc": 1542.93,
     "soccer_efl_champ::hull city afc": 1531.93,
     "soccer_efl_champ::bristol city fc": 1456.01,
@@ -179,7 +179,7 @@
     "soccer_efl_champ::ipswich town fc": 1613.15,
     "soccer_efl_champ::charlton athletic fc": 1455.35,
     "soccer_efl_champ::southampton fc": 1611.52,
-    "soccer_efl_champ::wrexham afc": 1523.82,
+    "soccer_efl_champ::wrexham afc": 1522.5,
     "soccer_efl_champ::leicester city fc": 1433.44,
     "soccer_uefa_champs_league::bsc young boys": 1397.16,
     "soccer_uefa_champs_league::aston villa fc": 1564.92,
@@ -244,9 +244,10 @@
     "soccer_efl_champ::bolton wanderers fc": 1506.49,
     "soccer_efl_champ::lincoln city fc": 1493.11,
     "soccer_spain_la_liga::real racing club de santander": 1501.52,
-    "soccer_efl_champ::west ham united fc": 1506.46
+    "soccer_efl_champ::west ham united fc": 1506.46,
+    "soccer_spain_la_liga::rc deportivo la coruña": 1497.36
   },
-  "ultima_actualizacion": "2026-08-17T18:44:26Z",
+  "ultima_actualizacion": "2026-08-18T06:50:11Z",
   "partidos_procesados": [
     "fd_497410",
     "fd_497411",
@@ -6511,6 +6512,9 @@
     "fd_561771",
     "fd_564632",
     "fd_567272",
-    "fd_567269"
+    "fd_567269",
+    "fd_564635",
+    "fd_567267",
+    "fd_561772"
   ]
 }
