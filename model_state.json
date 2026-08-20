@@ -42,7 +42,7 @@
     "soccer_spain_la_liga::real valladolid cf": 1276.57,
     "soccer_spain_la_liga::rcd espanyol de barcelona": 1466.43,
     "soccer_spain_la_liga::villarreal cf": 1616.71,
-    "soccer_spain_la_liga::club atlético de madrid": 1607.53,
+    "soccer_spain_la_liga::club atlético de madrid": 1615.64,
     "soccer_spain_la_liga::real oviedo": 1393.88,
     "soccer_spain_la_liga::levante ud": 1466.63,
     "soccer_spain_la_liga::elche cf": 1473.65,
@@ -245,9 +245,10 @@
     "soccer_efl_champ::lincoln city fc": 1493.11,
     "soccer_spain_la_liga::real racing club de santander": 1501.52,
     "soccer_efl_champ::west ham united fc": 1506.46,
-    "soccer_spain_la_liga::rc deportivo la coruña": 1497.36
+    "soccer_spain_la_liga::rc deportivo la coruña": 1497.36,
+    "soccer_spain_la_liga::málaga cf": 1491.89
   },
-  "ultima_actualizacion": "2026-08-19T18:40:30Z",
+  "ultima_actualizacion": "2026-08-20T06:52:31Z",
   "partidos_procesados": [
     "fd_497410",
     "fd_497411",
@@ -6515,6 +6516,7 @@
     "fd_567269",
     "fd_564635",
     "fd_567267",
-    "fd_561772"
+    "fd_561772",
+    "fd_564628"
   ]
 }
