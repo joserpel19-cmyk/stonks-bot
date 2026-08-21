@@ -28,7 +28,7 @@
     "soccer_spain_la_liga::real betis balompié": 1576.42,
     "soccer_spain_la_liga::girona fc": 1442.6,
     "soccer_spain_la_liga::rc celta de vigo": 1529.39,
-    "soccer_spain_la_liga::deportivo alavés": 1470.81,
+    "soccer_spain_la_liga::deportivo alavés": 1473.97,
     "soccer_spain_la_liga::ud las palmas": 1391.2,
     "soccer_spain_la_liga::sevilla fc": 1443.82,
     "soccer_spain_la_liga::ca osasuna": 1465.42,
@@ -36,7 +36,7 @@
     "soccer_spain_la_liga::valencia cf": 1524.25,
     "soccer_spain_la_liga::fc barcelona": 1775.48,
     "soccer_spain_la_liga::real sociedad de fútbol": 1482.24,
-    "soccer_spain_la_liga::rayo vallecano de madrid": 1519.3,
+    "soccer_spain_la_liga::rayo vallecano de madrid": 1516.14,
     "soccer_spain_la_liga::rcd mallorca": 1464.1,
     "soccer_spain_la_liga::real madrid cf": 1716.84,
     "soccer_spain_la_liga::real valladolid cf": 1276.57,
@@ -248,7 +248,7 @@
     "soccer_spain_la_liga::rc deportivo la coruña": 1497.36,
     "soccer_spain_la_liga::málaga cf": 1491.89
   },
-  "ultima_actualizacion": "2026-08-20T18:44:16Z",
+  "ultima_actualizacion": "2026-08-21T06:53:29Z",
   "partidos_procesados": [
     "fd_497410",
     "fd_497411",
@@ -6517,6 +6517,7 @@
     "fd_564635",
     "fd_567267",
     "fd_561772",
-    "fd_564628"
+    "fd_564628",
+    "fd_564638"
   ]
 }
