@@ -23,22 +23,22 @@
     "soccer_epl::sunderland afc": 1494.88,
     "soccer_epl::burnley fc": 1356.19,
     "soccer_epl::leeds united fc": 1528.49,
-    "soccer_spain_la_liga::athletic club": 1463.92,
+    "soccer_spain_la_liga::athletic club": 1460.97,
     "soccer_spain_la_liga::getafe cf": 1485.34,
     "soccer_spain_la_liga::real betis balompié": 1592.29,
     "soccer_spain_la_liga::girona fc": 1442.6,
-    "soccer_spain_la_liga::rc celta de vigo": 1531.1,
+    "soccer_spain_la_liga::rc celta de vigo": 1517.46,
     "soccer_spain_la_liga::deportivo alavés": 1473.97,
     "soccer_spain_la_liga::ud las palmas": 1391.2,
     "soccer_spain_la_liga::sevilla fc": 1463.2,
-    "soccer_spain_la_liga::ca osasuna": 1463.6,
+    "soccer_spain_la_liga::ca osasuna": 1477.24,
     "soccer_spain_la_liga::cd leganés": 1438.06,
     "soccer_spain_la_liga::valencia cf": 1512.38,
-    "soccer_spain_la_liga::fc barcelona": 1783.63,
-    "soccer_spain_la_liga::real sociedad de fútbol": 1476.53,
+    "soccer_spain_la_liga::fc barcelona": 1786.58,
+    "soccer_spain_la_liga::real sociedad de fútbol": 1471.51,
     "soccer_spain_la_liga::rayo vallecano de madrid": 1516.14,
     "soccer_spain_la_liga::rcd mallorca": 1464.1,
-    "soccer_spain_la_liga::real madrid cf": 1721.96,
+    "soccer_spain_la_liga::real madrid cf": 1726.98,
     "soccer_spain_la_liga::real valladolid cf": 1276.57,
     "soccer_spain_la_liga::rcd espanyol de barcelona": 1461.31,
     "soccer_spain_la_liga::villarreal cf": 1618.53,
@@ -253,7 +253,7 @@
     "soccer_france_ligue_one::es troyes ac": 1498.99,
     "soccer_italy_serie_a::frosinone calcio": 1491.87
   },
-  "ultima_actualizacion": "2026-08-26T06:55:41Z",
+  "ultima_actualizacion": "2026-08-28T06:01:43Z",
   "partidos_procesados": [
     "fd_497410",
     "fd_497411",
@@ -6587,6 +6587,9 @@
     "fd_567281",
     "fd_567280",
     "fd_567277",
-    "fd_564637"
+    "fd_564637",
+    "fd_564631",
+    "fd_564636",
+    "fd_564630"
   ]
 }
