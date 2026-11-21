@@ -23,7 +23,7 @@
     "soccer_epl::sunderland afc": 1467.05,
     "soccer_epl::burnley fc": 1356.19,
     "soccer_epl::leeds united fc": 1527.93,
-    "soccer_spain_la_liga::athletic club": 1488.33,
+    "soccer_spain_la_liga::athletic club": 1475.2,
     "soccer_spain_la_liga::getafe cf": 1485.83,
     "soccer_spain_la_liga::real betis balompié": 1603.87,
     "soccer_spain_la_liga::girona fc": 1442.6,
@@ -40,7 +40,7 @@
     "soccer_spain_la_liga::rcd mallorca": 1464.1,
     "soccer_spain_la_liga::real madrid cf": 1758.37,
     "soccer_spain_la_liga::real valladolid cf": 1276.57,
-    "soccer_spain_la_liga::rcd espanyol de barcelona": 1440.7,
+    "soccer_spain_la_liga::rcd espanyol de barcelona": 1453.83,
     "soccer_spain_la_liga::villarreal cf": 1603.66,
     "soccer_spain_la_liga::club atlético de madrid": 1679.81,
     "soccer_spain_la_liga::real oviedo": 1393.88,
@@ -84,12 +84,12 @@
     "soccer_germany_bundesliga::borussia dortmund": 1696.84,
     "soccer_germany_bundesliga::eintracht frankfurt": 1512.68,
     "soccer_germany_bundesliga::vfl wolfsburg": 1419.66,
-    "soccer_germany_bundesliga::fc bayern münchen": 1829.26,
+    "soccer_germany_bundesliga::fc bayern münchen": 1820.51,
     "soccer_germany_bundesliga::fc st. pauli 1910": 1348.18,
     "soccer_germany_bundesliga::1. fc heidenheim 1846": 1370.08,
-    "soccer_germany_bundesliga::1. fc köln": 1424.18,
+    "soccer_germany_bundesliga::1. fc köln": 1432.93,
     "soccer_germany_bundesliga::hamburger sv": 1467.9,
-    "soccer_france_ligue_one::le havre ac": 1389.79,
+    "soccer_france_ligue_one::le havre ac": 1379.82,
     "soccer_france_ligue_one::paris saint-germain fc": 1749.77,
     "soccer_france_ligue_one::stade brestois 29": 1509.01,
     "soccer_france_ligue_one::olympique de marseille": 1600.43,
@@ -250,7 +250,7 @@
     "soccer_epl::coventry city fc": 1478.74,
     "soccer_epl::hull city afc": 1502.29,
     "soccer_france_ligue_one::le mans fc": 1469.03,
-    "soccer_france_ligue_one::es troyes ac": 1446.01,
+    "soccer_france_ligue_one::es troyes ac": 1455.98,
     "soccer_italy_serie_a::frosinone calcio": 1519.37,
     "soccer_germany_bundesliga::sc paderborn 07": 1493.64,
     "soccer_germany_bundesliga::sv 07 elversberg": 1503.21,
@@ -267,7 +267,7 @@
     "soccer_uefa_champs_league::como 1907": 1530.21,
     "soccer_uefa_champs_league::racing club de lens": 1466.07
   },
-  "ultima_actualizacion": "2026-11-20T06:28:36Z",
+  "ultima_actualizacion": "2026-11-21T06:18:57Z",
   "partidos_procesados": [
     "fd_497410",
     "fd_497411",
@@ -7235,6 +7235,9 @@
     "fd_567347",
     "fd_567350",
     "fd_567351",
-    "fd_567352"
+    "fd_567352",
+    "fd_564748",
+    "fd_565859",
+    "fd_559622"
   ]
 }
